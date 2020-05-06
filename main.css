@@ -1,0 +1,164 @@
+
+
+
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+img {
+    max-width: 100% ;
+    width: auto ;
+    height: auto ;
+}
+input, select, button, textarea {
+    max-width: 100% ;
+}
+meter, progress, output {
+    max-width: 100% ;
+}
+div#tswsidecol {
+    float: right;
+    width: 8%;
+    color: #000;
+    background-color: #000000 ;
+}
+div#tswcontent {
+    float: right;
+    width: 80%;
+    color: #000;
+    background-color: #000000 ;
+}
+@media only screen and (max-width: 100px) {
+    div#tswsidecol {
+        float: none ;
+        width: 100% ;
+    }
+    div#tswcontent {
+        float: none ;
+        width: 100% ;
+    }
+}
+div#tswcontproper {
+    padding-left: 5px ;
+    padding-right: 5px ;
+}
+div#tswcontainer {
+    color: inherit;
+    background-color: #000000 ;
+}
+div#tswsideproper, div#tswothersideproper {
+    padding-left: 5px ;
+    padding-right: 5px ;
+}
+div#tswheader {
+    color: #000;
+    background-color: #000000 ;
+}
+
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+}
+
+
+.intro {
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    z-index: 1;
+    animation: intro 4s ease-out 1s;
+    color: rgb(255, 204, 204);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 350%;
+    opacity: 0;
+}
+
+#container{
+    padding: 20px 0 20px 30px;
+}
+
+a.waves-effect{
+    width: 218px;
+    height: 300px;
+}
+
+.card-people {
+    margin-top: 40px;
+}
+
+.character-pic {
+    height: 300px;
+    width: auto;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 5s ease-out 5s;
+    opacity: 0;
+}
+
+.logo svg {
+    width: inherit;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+@keyframes logo {
+    0% {
+        width: 18em;        
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;      
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;        
+    }
+}
+
+.card.people {
+    padding: 5px;
+}
+
+#pic{
+    height: 250px;
+    width: auto;
+}
+
+

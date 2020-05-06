@@ -1,88 +1,129 @@
-﻿<!DOCTYPE html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>GUERRA GALACTICA</title>
-
-<link rel="stylesheet" type="text/css" media="all" href="styles.css">
-
-<style type="text/css">
-.auto-style1 {
-	color: #F9972E;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/gif" href="assets/images/darth-vader.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
-
 <body>
 
-<div id="tswcontainer">
-	<div id="tswheader">
-	<!-- aqui empieza el encabezado de la pagina-->
+    <div id="tswcontainer">
+    <div id="tswheader">
+    <!-- aqui empieza el encabezado de la pagina-->
 
-	<p class="auto-style1">
-	<img src="Banner.png">
-	</p>
-	<p class="auto-style1">&nbsp;</p>
+    <p class="auto-style1">
+    <img src="assets/images/Banner.png">
+    </p>
+    <p class="auto-style1">&nbsp;</p>
 
-	<!-- aqui se termina el encabezado de la pagina-->
-	</div>
+    <!-- aqui se termina el encabezado de la pagina-->
+    </div>
 
-	<div id="tswcontent">
-	<!-- aqui empieza el contenido -->
+    <div id="tswcontent">
+    <!-- aqui empieza el contenido -->
 
-	<h1 class="auto-style1">BIENVENIDOS A LA APP DE BUSQUEDA DE GUERRA GALACTICA</h1>
-	<p>
-	<span class="auto-style1">RESULTADO DE LA BUSQUEDA:<ul style="height: 1800px">
-	</div>
-	<div id="tswcontproper">
+    <h1 class="auto-style1">BIENVENIDOS A LA APP DE BUSQUEDA DE GUERRA GALACTICA</h1>
+    <p>
+    <span class="auto-style1">RESULTADO DE LA BUSQUEDA:<ul style="height: 1800px">
+    </div>
+    <div id="tswcontproper">
         <!--Aqui se carga los datos de la API como son retornados por el JavaScript-->
 
-    </ul>
-	<script  src="star-wars-scripts.js"></script>
+    <!-- fin del contenido -->
+
+    </div>
+    
+
+    <div id="tswsidecol">
+    <div id="tswsideproper">
+    <!-- aqui empieza la barra lateral de navegacion -->
+
+    <p class="auto-style1">
+    <a href="#" onclick="FuncionLimpiar(tswcontproper)">INICIO</a>
+    <img class="img-responsive img-full" src="assets/images/inicio.png">
+    </p>
+
+    <p class="auto-style1">
+    <a Href="#" onclick="FuncionPeliculas()">PELICULAS</a>
+    <img class="img-responsive img-full" src="assets/images/peliculas.jpg">
+    </p>
+    
+    <p class="auto-style1">
+    <a Href="#" onclick="FuncionPersonajes()">PERSONAJES</a>
+    <img class="img-responsive img-full" src="assets/images/per.png">
+    </p>
+    
+    <p class="auto-style1">
+    <a Href="#" onclick="FuncionPlanetas()">PLANETAS</a>
+    <img class="img-responsive img-full" src="assets/images/mundos.svg">
+    </p>
+    
+    <p class="auto-style1">
+    <a Href="#" onclick="FuncionNaves()">NAVES</a>
+    <img class="img-responsive img-full" src="assets/images/rocket_in_space_T.png">
+    </p>
+    
+
+    <!-- aqui termina la barra lateral de navegacion -->
 
 
-	<!-- fin del contenido -->
 
-	</div>
-	
+        <section class="intro">
+                BIENVENIDOS A LA GUERRA GALACTICA.
+        </section>    
+        <section class="logo">
+            <img src="assets/images/download.svg" alt="Star Wars">
+        </section>
+        
+        <div class ="none container-fluid" id="container"> 
+            <div id="row-container" class="row">
+                
 
-	<div id="tswsidecol">
-	<div id="tswsideproper">
-	<!-- aqui empieza la barra lateral de navegacion -->
+            </div> 
+            
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content container-fluid">
+                <div class="row">
+                    <h4 class="center-align" id="name"></h4>
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <img id="pic" src="">
+                    </div>
+                    <div class="col s5 offset-s1">
+                        <p id="hair-color"></p>
+                        <p id="eye-color"></p>
+                        <p id="skin-color"></p>
+                        <p id="mass"></p>
+                        <p id="height"></p>
+                        <p id="gender"></p>
+                    </div>
+                </div>
+                
+                
+            
+            </div>
+    
+        </div>
 
-	<p class="auto-style1">
-	<a href="#" onclick="FuncionLimpiar(tswcontproper)">INICIO</a>
-	<img class="img-responsive img-full" src="imagenes/inicio.png">
-	</p>
 
-	<p class="auto-style1">
-	<a Href="#" onclick="FuncionPeliculas()">PELICULAS</a>
-	<img class="img-responsive img-full" src="imagenes/peliculas.jpg">
-	</p>
-	
-	<p class="auto-style1">
-	<a Href="#" onclick="FuncionPersonajes()">PERSONAJES</a>
-	<img class="img-responsive img-full" src="imagenes/per.png">
-	</p>
-	
-	<p class="auto-style1">
-	<a Href="#" onclick="FuncionPlanetas()">PLANETAS</a>
-	<img class="img-responsive img-full" src="imagenes/mundos.svg">
-	</p>
-	
-	<p class="auto-style1">
-	<a Href="#" onclick="FuncionNaves()">NAVES</a>
-	<img class="img-responsive img-full" src="imagenes/rocket_in_space_T.png">
-	</p>
-	
 
-	<!-- aqui termina la barra lateral de navegacion -->
-	</div>
-	</div>
-	<div style="clear: both;"></div>
-
-</div>
+        <audio id="myAudio" preload="auto" autoplay>
+            <source src="assets/audio/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
+        </audio>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 
